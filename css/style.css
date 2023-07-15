@@ -20,6 +20,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul{
+  list-style-type: none;
+}
 .container {
   max-width: 1180px;
   padding-left: 10px;
@@ -55,4 +58,39 @@ header {
   text-transform: uppercase;
 }
 .phone {
+  position: relative;
+}
+.phone::before{
+  content: '';
+  position: absolute;
+  background-image: url(../images/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -4px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+.phone {
+}
+.mail {
+  margin: 17px 0;
+}
+.footer__social {
+}
+.footer__social-item {
+}
+.footer__social-link {
+}
+.footer__social-img {
 }
